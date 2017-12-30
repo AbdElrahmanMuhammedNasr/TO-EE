@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1384.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zzz_tojavaee.FXMLDocumentController">
+   <children>
+      <Pane fx:id="login" layoutX="94.0" layoutY="93.0" prefHeight="554.0" prefWidth="375.0">
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </padding>
+         <children>
+            <JFXTextField fx:id="userName" layoutX="35.0" layoutY="103.0" prefHeight="36.0" prefWidth="279.0" promptText="User Name">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password" layoutX="38.0" layoutY="240.0" prefHeight="25.0" prefWidth="279.0" promptText="Password">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton layoutX="133.0" layoutY="410.0" onAction="#showBar" prefHeight="42.0" prefWidth="81.0" text="Login">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <BorderPane fx:id="p" layoutX="759.0" layoutY="90.0" prefHeight="476.0" prefWidth="526.0">
+         <top>
+            <JFXButton onAction="#Operation" prefHeight="88.0" prefWidth="527.0" style="-fx-background-color: gray;" text="OPerationEmp" textFill="#2f2e2e" underline="true" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+         </top>
+         <bottom>
+            <JFXButton onAction="#tableEmp" prefHeight="94.0" prefWidth="524.0" style="-fx-background-color: gray;" text="Search" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+         </bottom>
+         <left>
+            <JFXButton onAction="#OperationPro" prefHeight="261.0" prefWidth="135.0" style="-fx-background-color: gray;" text="ProductsEnter" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+         </left>
+         <right>
+            <JFXButton onAction="#Outer" prefHeight="261.0" prefWidth="133.0" style="-fx-background-color: gray;" text="ProductsOuter" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+         </right>
+         <center>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Operation" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="38.0" />
+               </font>
+            </Text>
+         </center>
+      </BorderPane>
+   </children>
+</Pane>

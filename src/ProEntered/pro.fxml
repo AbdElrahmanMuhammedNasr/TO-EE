@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1360.0" stylesheets="@pro.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProEntered.ProController">
+   <children>
+      <Text fill="#fffafa" layoutX="635.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Products_Entered">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Pane fx:id="AddPro" layoutY="25.0" prefHeight="646.0" prefWidth="368.0">
+         <children>
+            <Text layoutX="128.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD_New">
+               <font>
+                  <Font size="21.0" />
+               </font></Text>
+            <JFXTextField fx:id="AddId" layoutX="14.0" layoutY="71.0" prefHeight="25.0" prefWidth="344.0" promptText="ID">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="AddName" layoutX="14.0" layoutY="162.0" prefHeight="25.0" prefWidth="344.0" promptText="Name">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="AddKind" layoutX="14.0" layoutY="249.0" prefHeight="25.0" prefWidth="344.0" promptText="Kind">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="AddPrice" layoutX="14.0" layoutY="426.0" prefHeight="25.0" prefWidth="344.0" promptText="Price">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="AddDate" layoutX="14.0" layoutY="514.0" prefHeight="25.0" prefWidth="344.0" promptText="DateOfEnter">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="AddNumber" layoutX="14.0" layoutY="342.0" prefHeight="34.0" prefWidth="344.0" promptText="NumberOfKinds">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="125.0" layoutY="583.0" onAction="#Add" prefHeight="43.0" prefWidth="101.0" text="ADD">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="DeletePane" layoutX="514.0" layoutY="55.0" prefHeight="239.0" prefWidth="368.0">
+         <children>
+            <Text layoutX="147.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DELETE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="DeleteName" layoutX="96.0" layoutY="65.0" prefHeight="25.0" prefWidth="199.0" promptText="Name">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="142.0" layoutY="155.0" onAction="#Delete" prefHeight="34.0" prefWidth="85.0" text="DELETE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="UpdatePane" layoutX="1000.0" layoutY="379.0" prefHeight="284.0" prefWidth="344.0">
+         <children>
+            <Text layoutX="136.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UPDATE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="UPdateName" layoutX="105.0" layoutY="62.0" prefHeight="25.0" prefWidth="181.0" promptText="Name">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="UpdatePer" layoutX="105.0" layoutY="153.0" prefHeight="25.0" prefWidth="181.0" promptText="persent">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="146.0" layoutY="221.0" onAction="#Update" prefHeight="38.0" prefWidth="94.0" text="UPDATE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</Pane>

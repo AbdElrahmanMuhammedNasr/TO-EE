@@ -1,0 +1,11 @@
+.root {
+    -fx-background-image: url(1.jpeg);
+    -fx-background-size: 1400;
+}
+#AddPro,#DeletePane ,#UpdatePane{
+    -fx-background-color: gray;
+    -fx-opacity: 0.6;
+    -fx-background-radius: 50px;
+}
+
+
